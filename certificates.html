@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+<title>Neil Stanley - Certificates</title>
+
+<style>
+
+html{
+    height:100%;
+}
+
+body{
+    margin:0;
+    height:100%;
+    background:#8f8ff2;
+    color:#fff;
+    font:normal 16px/24px Arial,Helvetica,sans-serif;
+}
+
+/* =======================
+Navbar
+======================= */
+
+.navbar{
+    display:flex;
+    align-items:center;
+}
+
+.navbar a{
+    color:#8f8ff2;
+    text-decoration:none;
+    margin-right:25px;
+}
+
+.email{
+    margin-left:auto;
+}
+
+/* =======================
+Main Layout
+======================= */
+
+#content{
+
+    width:800px;
+
+    position:absolute;
+
+    top:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+/* =======================
+Title
+======================= */
+
+#content h1{
+
+    font-size:40px;
+
+    margin:0 0 30px;
+
+}
+
+/* =======================
+Scrollable Certificates
+======================= */
+
+#certificate-list{
+
+    max-height:68vh;
+
+    overflow-y:auto;
+
+    padding-right:15px;
+
+}
+
+/* scrollbar */
+
+#certificate-list::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+#certificate-list::-webkit-scrollbar-thumb{
+
+    background:rgba(255,255,255,.35);
+
+    border-radius:20px;
+
+}
+
+/* =======================
+Card
+======================= */
+
+.experience{
+
+    margin-bottom:60px;
+
+}
+
+.experience img{
+
+    width:100%;
+
+    max-width:700px;
+
+    border-radius:10px;
+
+    display:block;
+
+    margin:25px 0;
+
+}
+
+.experience a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+/* =======================
+Footer
+======================= */
+
+#footer{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:90px;
+
+    background:#fff;
+
+    color:#8f8ff2;
+
+    border-top:1px solid rgba(0,0,0,.15);
+
+    box-shadow:0 1px 0 rgba(255,255,255,.3) inset;
+
+}
+
+#navbar{
+
+    padding:30px 100px;
+
+}
+
+/* =======================
+Mobile
+======================= */
+
+@media(max-width:768px){
+
+    #content{
+
+        width:90%;
+
+        left:5%;
+
+        transform:none;
+
+        top:25px;
+
+    }
+
+    #content h1{
+
+        font-size:30px;
+
+    }
+
+    #certificate-list{
+
+        max-height:65vh;
+
+    }
+
+    #footer{
+
+        height:auto;
+
+        position:fixed;
+
+    }
+
+    #navbar{
+
+        display:block;
+
+        padding:20px;
+
+    }
+
+    #navbar a{
+
+        display:block;
+
+        margin:10px 0;
+
+    }
+
+    .email{
+
+        margin-left:0;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+
+<h1>Certificates</h1>
+
+<div id="certificate-list">
+
+Loading certificates...
+
+</div>
+
+</div>
+
+<div id="footer">
+
+<nav id="navbar" class="navbar">
+
+<a href="index.html">Home</a>
+
+<a href="experiences.html">Experiences</a>
+
+<a href="certificates.html">Certificates</a>
+
+<a href="contact.html">Contact</a>
+
+<a class="email" href="mailto:contact@neil-stanley.com">
+
+contact@neil-stanley.com
+
+</a>
+
+</nav>
+
+</div>
+
+<script src="js/certificates.js?v=3"></script>
+
+<script defer
+src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
+integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
+data-cf-beacon='{"version":"2024.11.0","token":"4b865050e8714618bc8021f0467bf28c","r":1}'
+crossorigin="anonymous">
+</script>
+
+</body>
+</html>
